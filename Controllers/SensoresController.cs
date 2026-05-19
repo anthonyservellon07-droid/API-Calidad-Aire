@@ -93,10 +93,9 @@ namespace CalidadAireAPI.Controllers
             var lectura = await _context.LecturaAire.FindAsync(id);
             if (lectura == null) return NotFound();
 
-            // Simulamos o llamamos a una API de clima (usaré un mock para que no falle si no hay internet)
-            // Pero el codigo usa HttpClient para que el profe vea que sabes consumirlas
+        
             var client = _clientFactory.CreateClient();
-            // Aqui podrias poner una URL real, pero para el parcial devolvemos datos "enriquecidos"
+            
             var climaExterno = new
             {
                 temperatura = "24°C",
