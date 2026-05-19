@@ -9,9 +9,9 @@
         public decimal PM10 { get; set; }
         public decimal CO2 { get; set; }
 
-        public DateTime FechaHora { get; set; } = DateTime.Now; // Autogenerar la fecha actual
+        public DateTime FechaHora { get; set; } = DateTime.Now; 
 
-        // Relacion con el sensor
+        // Relacion para  el sensor......................
         public SensorCalidadAire? Sensor { get; set; }
     }
 }
